@@ -113,7 +113,7 @@ const replaceHashes = (result, hashes) =>
     (acc, className) =>
       acc.replace(
         new RegExp(`((class|className)="[^"]*?)${className}\\s?([^"]*")`, 'g'),
-        '$1$3'
+        ''
       ),
     result
   )
