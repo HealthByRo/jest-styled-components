@@ -143,9 +143,8 @@ const styleSheetSerializer = {
       classNames,
       hashes
     )
-    const code = print(val)
+    let result = print(val)
 
-    let result = `${style}${style ? '\n\n' : ''}${code}`
     result = replaceClassNames(result, classNamesToReplace, style)
     result = replaceHashes(result, hashes)
 
