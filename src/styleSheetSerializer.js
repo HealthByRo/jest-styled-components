@@ -104,7 +104,9 @@ const replaceClassNames = (result, classNames, style) =>
     .filter(className => style.includes(className))
     .reduce(
       (acc, className, index) =>
-        acc.replace(new RegExp(className, 'g'), `c${index++}`),
+        acc.replace(new RegExp(`${className} `, 'g'), '')
+            .replace(new RegExp(className, 'g'), '')
+            .replace('class=""', ''),
       result
     )
 
