@@ -84,7 +84,7 @@ exports[`attaching additional props: mount 1`] = `
 
 <styled.div>
   <div
-    className="div c0"
+    className="c0 div"
   />
 </styled.div>
 `;
@@ -95,7 +95,7 @@ exports[`attaching additional props: react-test-renderer 1`] = `
 }
 
 <div
-  className="div c0"
+  className="c0 div"
 />
 `;
 
@@ -105,7 +105,7 @@ exports[`attaching additional props: react-testing-library 1`] = `
 }
 
 <div
-  class="div c0"
+  class="c0 div"
 />
 `;
 
@@ -115,7 +115,7 @@ exports[`attaching additional props: shallow 1`] = `
 }
 
 <div
-  className="div c0"
+  className="c0 div"
 />
 `;
 
@@ -321,126 +321,6 @@ exports[`empty style: shallow 1`] = `
 />
 `;
 
-exports[`extending styles: mount 1`] = `
-.c0 {
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-}
-
-.c1 {
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-  color: tomato;
-  border-color: tomato;
-}
-
-<div>
-  <styled.button>
-    <button
-      className="c0"
-    >
-      Normal Button
-    </button>
-  </styled.button>
-  <styled.button>
-    <button
-      className="c1"
-    >
-      Tomato Button
-    </button>
-  </styled.button>
-</div>
-`;
-
-exports[`extending styles: react-test-renderer 1`] = `
-.c0 {
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-}
-
-.c1 {
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-  color: tomato;
-  border-color: tomato;
-}
-
-<div>
-  <button
-    className="c0"
-  >
-    Normal Button
-  </button>
-  <button
-    className="c1"
-  >
-    Tomato Button
-  </button>
-</div>
-`;
-
-exports[`extending styles: react-testing-library 1`] = `
-.c0 {
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-}
-
-.c1 {
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-  color: tomato;
-  border-color: tomato;
-}
-
-<div>
-  <button
-    class="c0"
-  >
-    Normal Button
-  </button>
-  <button
-    class="c1"
-  >
-    Tomato Button
-  </button>
-</div>
-`;
-
-exports[`extending styles: shallow 1`] = `
-<div>
-  <styled.button>
-    Normal Button
-  </styled.button>
-  <styled.button>
-    Tomato Button
-  </styled.button>
-</div>
-`;
-
 exports[`included class name: mount 1`] = `
 .c0 {
   color: red;
@@ -448,7 +328,7 @@ exports[`included class name: mount 1`] = `
 
 <styled.div>
   <div
-    className="i c0"
+    className="c0 i"
   />
 </styled.div>
 `;
@@ -459,7 +339,7 @@ exports[`included class name: react-test-renderer 1`] = `
 }
 
 <div
-  className="i c0"
+  className="c0 i"
 />
 `;
 
@@ -469,7 +349,7 @@ exports[`included class name: react-testing-library 1`] = `
 }
 
 <div
-  class="i c0"
+  class="c0 i"
 />
 `;
 
@@ -479,7 +359,7 @@ exports[`included class name: shallow 1`] = `
 }
 
 <div
-  className="i c0"
+  className="c0 i"
 />
 `;
 
@@ -562,12 +442,12 @@ exports[`referring to other components: mount 1`] = `
   margin: 0 10px;
 }
 
-.c6 .c4 {
+.sc-fzXfLU .c4 {
   color: yellow;
   background-color: green;
 }
 
-.c6 .c5 {
+.sc-fzXfLU .c5 {
   color: yellow;
   background-color: red;
 }
@@ -654,12 +534,12 @@ exports[`referring to other components: react-test-renderer 1`] = `
   margin: 0 10px;
 }
 
-.c6 .c4 {
+.sc-fzXfLU .c4 {
   color: yellow;
   background-color: green;
 }
 
-.c6 .c5 {
+.sc-fzXfLU .c5 {
   color: yellow;
   background-color: red;
 }
@@ -732,12 +612,12 @@ exports[`referring to other components: react-testing-library 1`] = `
   margin: 0 10px;
 }
 
-.c6 .c4 {
+.sc-fzXfLU .c4 {
   color: yellow;
   background-color: green;
 }
 
-.c6 .c5 {
+.sc-fzXfLU .c5 {
   color: yellow;
   background-color: red;
 }
@@ -1094,7 +974,7 @@ exports[`trailing white spaces: mount 1`] = `
 
 <styled.div>
   <div
-    className="div   c0"
+    className="c0 div  "
   />
 </styled.div>
 `;
@@ -1105,7 +985,7 @@ exports[`trailing white spaces: react-test-renderer 1`] = `
 }
 
 <div
-  className="div   c0"
+  className="c0 div  "
 />
 `;
 
@@ -1115,7 +995,7 @@ exports[`trailing white spaces: react-testing-library 1`] = `
 }
 
 <div
-  class="div   c0"
+  class="c0 div  "
 />
 `;
 
@@ -1125,6 +1005,6 @@ exports[`trailing white spaces: shallow 1`] = `
 }
 
 <div
-  className="div   c0"
+  className="c0 div  "
 />
 `;
