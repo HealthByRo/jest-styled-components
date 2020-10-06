@@ -5,11 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [6.3.4](https://github.com/styled-components/jest-styled-components/compare/v6.3.3...v6.3.4) - 2019-11-12
+## [7.0.3](https://github.com/styled-components/jest-styled-components/compare/v7.0.2...v7.0.3) - 2020-08-19
 
-### Fixed
+- Strip static class names from jest snapshot results (#320) thanks @blnoonan
+- Fix get styled className from children components (#313) thanks @vxcamiloxv
 
-- [TS] Update Matchers interface (#270)
+## [7.0.2](https://github.com/styled-components/jest-styled-components/compare/v7.0.1...v7.0.2) - 2020-04-09
+
+Fix toHaveStyleRule support classes with displayName prefix (#302) thanks @vxcamiloxv
+
+## [7.0.1](https://github.com/styled-components/jest-styled-components/compare/v7.0.0...v7.0.1) - 2020-04-07
+
+- Update Matchers interface (#269) thanks @tobilen
+
+- Extend global namespace with jest matcher (#308) thanks @tobilen
+
+- support shallow rendering when nesting styled components (#306) (#309) thanks @functionalDev
+
+- Remove object spread to continue Node LTS 10/12 support (#304) thanks @vxcamiloxv
+
+## [7.0.0](https://github.com/styled-components/jest-styled-components/compare/v6.3.1...v7.0.0) - 2020-01-13
+
+- styled-components v5 support, drops support for s-c versions below v5
+- ship `stylesheetSerializer` as a named export
 
 ## [6.3.1](https://github.com/styled-components/jest-styled-components/compare/v6.3.0...v6.3.1) - 2018-11-11
 
