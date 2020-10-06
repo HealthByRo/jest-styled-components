@@ -1,5 +1,5 @@
 {
-  "name": "@ro/jest-styled-components",
+  "name": "@ro/jest-no-classes",
   "version": "7.0.3",
   "description": "Jest utilities for Styled Components",
   "main": "./src/index.js",
