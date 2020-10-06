@@ -102,6 +102,9 @@ const replaceHashes = (result, hashes) =>
     result
   );
 
+const replaceEmptyClassNames = (result) =>
+  result.replace(new RegExp('\n?\\s*(class|className)=""\n?', 'g'), '\n');
+
 module.exports = {
   test(val) {
     return (
@@ -127,10 +130,11 @@ module.exports = {
     const classNamesToReplace = getClassNamesFromSelectorsByHashes(classNames, hashes);
     const code = print(val);
 
-    let result = `${style}${style ? '\n\n' : ''}${code}`;
+    let result = code;
     result = stripUnreferencedClassNames(result, unreferencedClassNames);
     result = replaceClassNames(result, classNamesToReplace, style);
     result = replaceHashes(result, hashes);
+    result = replaceEmptyClassNames(result);
 
     return result;
   },
