@@ -90,7 +90,7 @@ const getClassNamesFromSelectorsByHashes = (classNames, hashes) => {
 const replaceClassNames = (result, classNames, style) =>
   classNames
     .filter(className => style.includes(className))
-    .reduce((acc, className, index) => acc.replace(new RegExp(className, 'g'), ''), result);
+    .reduce((acc, className, index) => acc.replace(new RegExp(`${className}\\s?`,'g'), ''), result);
 
 const stripUnreferencedClassNames = (result, classNames) =>
     classNames
